@@ -72,7 +72,10 @@ a{
 
 .historia {
    margin: auto;
-    background-color: #000000;
+    background-color: black;
+    border-radius: 5px;
+    
+    
 }
 
 .historia h1 {
@@ -85,6 +88,8 @@ a{
     font-size: large;
     font-family:'Times New Roman', Times, serif;
     color: red;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .roda-pe {
