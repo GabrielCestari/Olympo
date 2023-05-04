@@ -74,12 +74,48 @@ a{
    margin: auto;
     background-color: black;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: red 4px solid;
+    border-top: red 4px solid;
     
     
 }
 
+.historia img {
+    display: flex;
+    margin-left: 2%;
+    margin-top: 2%;
+   height: 15%;
+   width: 17%;
+   margin-bottom: 2%;
+   border-radius: 2%;
+}
+
 .historia h1 {
    font-size: large;
+   font-family:'Times New Roman', Times, serif;
+   color: red;
+  
+   
+   
+}
+
+.texto1 {
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+    color: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30% ;
+    height: 15%;
+
+  
+    
+}
+.Referencias h1{
+    
    font-family:'Times New Roman', Times, serif;
    color: red;
 }
@@ -90,7 +126,7 @@ a{
     color: red;
     display: flex;
     justify-content: space-evenly;
-}
+} 
 
 .roda-pe {
     border-top: red 4px solid;
