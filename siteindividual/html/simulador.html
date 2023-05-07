@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympo | Simulador</title>
+    <link rel="stylesheet" href="../css/simulaodr.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container-header">
+            <img src="../img/logo original.png">
+            <ul class="NavBar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="simulador.html">Simulador</a></li>
+                <li><a> | </a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="simulador">
+        <div class="treino">
+
+            <h3>Monte o seu treino</h3>
+            <input id="id_dias" placeholder="Quantos dias da semana " type="number" max="7" class="input"> <br> <br>
+            <input id="id_minutos" placeholder="Quantos minutos de treino" type="number" class="input"> <br>
+            <button class="botão" onclick="criar()">Criar Treino</button>
+        </div> <br>
+        
+    </div> <br> 
+    <div id="div_resposta" class="resposta"></div> <br>
+
+    
+
+    <div class="roda-pe">
+        <a>Copyright by gabriel.sanchez@sptech.school</a>
+
+    </div>
+</body>
+</html>
+
+<script>
+function criar(){
+var dias = Number(id_dias.value)
+var minutos = Number(id_minutos.value)
+
+if(dias = 1 && minutos == 30){
+    div_resposta.innerHTML = `<h1>O treino mais recomendável é o treino Full body</h1>, <br> Ele consiste em realizar exercícios que trabalham os grandes grupamentos musculares com exercícios, cujos, chamamos exercícios multiarticulares. <br> Faça esses 5 exercícios: <br> 1°Agachamento. <br> 2°Supino. <br> 3°Stiff. <br> 4°Remada curvada. <br> 5° Abdominal remador. <br> Lembrando que o ideal para hipertrofiar é treinar no minímo 3 vezes na semana`
+}else if(dias = 2 && minutos == 31){
+    div_resposta.innerHTML = `<h1>O treino mais recomendável é o treino Full body dividido em 2 dias </h1>, <br> Ele consiste em realizar exercícios que trabalham os grandes grupamentos musculares com exercícios, cujos, chamamos exercícios multiarticulares. <br> <h1>Primeiro dia:</h1> <br> 1°Agachamento. <br> 2°Supino reto . <br> 3° Barras Fixa  . <br> 4° Remada curvada. <br> 5° Desenvolvimento Com barra. <br> 6° Panturrilha em pé. <br> <h1>Segundo dia: </h1>1°Afundo. <br> 2°Supino inclinado com halteres . <br> 3° puxador frontal  . <br> 4° Remada serrote. <br> 5° Desenvolvimento Arnold. <br> 6° Panturrilha sentada. <br> Lembrando que o ideal para hipertrofiar é treinar no minímo 3 vezes na semana`
+
+}else if(dias = 3 && minutos == 40){
+    div_resposta.innerHTML = `<h1>O treino mais recomendável é o treino Full body dividido em 3 dias </h1>, <br> Ele consiste em realizar exercícios que trabalham os grandes grupamentos musculares com exercícios, cujos, chamamos exercícios multiarticulares. <br> <h1>Primeiro dia:</h1> <br> 1°Agachamento. <br> 2°Supino reto . <br> 3° Barras Fixa  . <br> 4° Desenvolvimento militar. <br> 5° Rosca direta. <br> 6° Abdômen na roda. <br> <h1>Segundo dia: </h1>1° Levantamento Terra. <br> 2° Remada curvada . <br> 3° Supino Inclinado com Halteres  . <br> 4° Elevação Lateral. <br> 5° Triceps Corda. <br> 6° Rosca Martelo. <br> <h1>Terceiro  dia: </h1>1° Afundo  <br> 2° Paralela para Peito . <br> 3°  Elevação Frontal . <br> 4°  Barra Fixa Invertida. <br> 5° Panturrilha Cavalinho. <br> 6° Triceps Testa. <br> Lembrando que todos são 4 série de 12 repetições`
+
+}
+else{
+    div_resposta.innerHTML = `A quantidade miníma de tempo é 30 min`
+}
+
+}
+
+</script>
