@@ -92,8 +92,8 @@ a{
 .resposta {
 background-color: rgb(73, 9, 9);
 color: red;
-border-radius: 10px;
-border-top: 10px;
+border-radius: 1opx;
+
 }
 
 
@@ -104,13 +104,14 @@ border-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 2%;
+    
 }
 
 .roda-pe a{
     font-size: large;
     font-family:'Times New Roman', Times, serif;
     color: red;
-    margin-top: 20px;
+    margin-top: 2%;
 }
 
