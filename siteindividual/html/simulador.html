@@ -43,36 +43,14 @@
 </body>
 </html>
 
-<script>
+<script id="treino">
 function criar(){
 var dias = Number(id_dias.value)
 var minutos = Number(id_minutos.value)
 
-if(dias === 1 && minutos > 30){
-    div_resposta.innerHTML = `<h1>O treino mais recomendável é o treino Full body</h1>, <br> Ele consiste em realizar exercícios que trabalham os grandes grupamentos musculares com exercícios, cujos, chamamos exercícios multiarticulares. <br> Faça esses 5 exercícios: <br> 1°Agachamento. <br> 2°Supino. <br> 3°Stiff. <br> 4°Remada curvada. <br> 5° Abdominal remador. <br> Lembrando que o ideal para hipertrofiar é treinar no minímo 3 vezes na semana`
-}else if(dias === 2 && minutos > 30){
-    div_resposta.innerHTML = `<h1>O treino mais recomendável é o treino Full body dividido em 2 dias </h1>, <br> Ele consiste em realizar exercícios que trabalham os grandes grupamentos musculares com exercícios, cujos, chamamos exercícios multiarticulares. <br> <h1>Primeiro dia:</h1> <br> 1°Agachamento. <br> 2°Supino reto . <br> 3° Barras Fixa  . <br> 4° Remada curvada. <br> 5° Desenvolvimento Com barra. <br> 6° Panturrilha em pé. <br> <h1>Segundo dia: </h1>1°Afundo. <br> 2°Supino inclinado com halteres . <br> 3° puxador frontal  . <br> 4° Remada serrote. <br> 5° Desenvolvimento Arnold. <br> 6° Panturrilha sentada. <br> Lembrando que o ideal para hipertrofiar é treinar no minímo 3 vezes na semana`
-
-}else if(dias === 3 && minutos > 30){
-    div_resposta.innerHTML = `<h1>O treino mais recomendável é o treino Full body dividido em 3 dias </h1>, <br> Ele consiste em realizar exercícios que trabalham os grandes grupamentos musculares com exercícios, cujos, chamamos exercícios multiarticulares. <br> <h1>Primeiro dia:</h1> <br> 1°Agachamento. <br> 2°Supino reto . <br> 3° Barras Fixa  . <br> 4° Desenvolvimento militar. <br> 5° Rosca direta. <br> 6° Abdômen na roda. <br> <h1>Segundo dia: </h1>1° Levantamento Terra. <br> 2° Remada curvada . <br> 3° Supino Inclinado com Halteres  . <br> 4° Elevação Lateral. <br> 5° Triceps Corda. <br> 6° Rosca Martelo. <br> <h1>Terceiro  dia: </h1>1° Afundo  <br> 2° Paralela para Peito . <br> 3°  Elevação Frontal . <br> 4°  Barra Fixa Invertida. <br> 5° Panturrilha Cavalinho. <br> 6° Triceps Testa. <br> Lembrando que todos são 4 série de 12 repetições`
-
-}else if(dias === 4 && minutos > 30){
-    div_resposta.innerHTML = `<h1>O treino mais recomendável é o treino ABCD </h1>, <br> <h1>1° dia: Peito e tríceps </h1> <br> 1°supino reto. <br> 2°Supino inclinado . <br> 3° CrossOver . <br> 4° tríceps corda. <br> 5° tríceps testa <br> 6° tríceps na barra. <br> <h1>2 ° dia: Costas e Bíceps </h1>1° pull Down. <br> 2° Puxador  . <br> 3° remada unilateral  . <br> 4° Rosca bíceps apoiado no banco Scott e com a barra EZ. <br> 5°  Rosca bíceps com halteres no banco inclinado. <br> 6° Rosca bíceps martelo em pé com halteres. <br> <h1>3° dia: </h1> Descanso <br>   <h1>4° dia: Perna </h1> <br>   1° Agachamento  <br> 2° Extensora . <br> 3°  Leg Press . <br> 4°  Stiff. <br> 5° Panturrilha Cavalinho. <br> <h1>5° dia: Ombro, Antebraço </h1> <br>   1° Desenvolvimento  <br> 2° Elevação lateral . <br> 3° Elevação frontal . <br> 4°  crucifixo invertido. <br> 5° Flexão dos punhos. <br> 6°  Extensão dos punhos<br> 7°  Rosca martelo  <br> Lembrando que todos são 4 série de 12 repetições`
-
-}
-else if(dias === 5 && minutos > 30){
-    div_resposta.innerHTML = `<h1>O treino mais recomendável é o treino ABCDE </h1>, <br> <h1>1° dia: Peito, tríceps e Ombro </h1> <br> 1°supino reto. <br> 2°Supino inclinado . <br> 3° CrossOver . <br> 4° tríceps corda. <br> 5° tríceps testa <br> 6° tríceps na barra. <br> 7° Desenvolvimento <br> 8° Elevação lateral . <br> 9° Elevação frontal . <br> 10°  crucifixo invertido.   <br> <h1>2° dia: Costas, Bíceps e antebraço </h1>1° Pull Down. <br> 2° Puxador  . <br> 3° remada unilateral  . <br> 4° Rosca bíceps apoiado no banco Scott e com a barra EZ. <br> 5°  Rosca bíceps com halteres no banco inclinado. <br> 6° Rosca bíceps martelo em pé com halteres. <br>  7° Flexão dos punhos. <br> 8°  Extensão dos punhos<br> 9°  Rosca martelo <br> <h1>3° dia: </h1> Perna <br>   1° Agachamento  <br> 2° Extensora . <br> 3°  Leg Press . <br> 4°  Stiff. <br> 5° Panturrilha Cavalinho. <br>  <h1>4° dia: Peito tríceps e Ombro </h1> 1°supino reto. <br> 2°Supino inclinado . <br> 3° CrossOver . <br> 4° tríceps corda. <br> 5° tríceps testa <br> 6° tríceps na barra. <br> 7° Desenvolvimento <br> 8° Elevação lateral . <br> 9° Elevação frontal . <br> 10°  crucifixo invertido.  <br> <br> <h1>5° dia: Costas, Bíceps e antebraço </h1> <br> 1° Pull Down. <br> 2° Puxador  . <br> 3° remada unilateral  . <br> 4° Rosca bíceps apoiado no banco Scott e com a barra EZ. <br> 5°  Rosca bíceps com halteres no banco inclinado. <br> 6° Rosca bíceps martelo em pé com halteres. <br>  7° Flexão dos punhos. <br> 8°  Extensão dos punhos<br> 9°  Rosca martelo  <br> Lembrando que todos são 4 série de 12 repetições`
-
-}else if(dias === 6 && minutos > 30){
-    div_resposta.innerHTML = `<h1>O treino mais recomendável é o treino ABCDEF </h1>, <br> <h1>1° dia: Peito </h1> <br> 1° Voador (peck Deck) com drop set <br> 2° Supino inclinado com alteres. <br> 3° supindo reto com barra <br> 4° Crossover<br> <h1>2° dia: Costas </h1>1° pull Down. <br> 2° Puxador  . <br> 3° remada unilateral  . <br> 4° Remada curvada com pegada supinada <br> 5°  remada sentada com pegada neutra.  <br> <h1> 3° dia: Perna </h1>  <br>   1° Agachamento  <br> 2° Extensora . <br> 3°  Leg Press . <br> 4°  Stiff. <br> 5° Panturrilha Cavalinho . <br> 6° Flexora <br>  <h1>4° dia: Ombro </h1> 1° Desenvolvimento <br> 2° Elevação lateral . <br> 3° Elevação frontal . <br> 4°  crucifixo invertido.  <br> <br> <h1> 5° dia: Braços </h1>  <br>  1° Rosca bíceps apoiado no banco Scott e com a barra EZ. <br> 2°  Rosca bíceps com halteres no banco inclinado. <br> 3° Rosca bíceps martelo em pé com halteres. <br> 4° tríceps corda. <br> 5° tríceps testa <br> 6° tríceps na barra. <br> <h1> 6° dia: dorsal </h1> 1° pull Down. <br> 2° Puxador  . <br> 3° remada unilateral  . <br> 4° Remada curvada com pegada supinada <br> 5°  remada sentada com pegada neutra.  <br>   <br> Lembrando que todos são 4 série de 12 repetições`
-
-}else if(dias === 7 && minutos > 30){
-    div_resposta.innerHTML = `<h1>O treino mais recomendável é o treino ABCDEF </h1>, <br> <h1>1° dia: Peito </h1> <br> 1° Voador (peck Deck) com drop set <br> 2° Supino inclinado com alteres. <br> 3° supindo reto com barra <br> 4° Crossover<br> <h1>2° dia: Costas </h1>1° pull Down. <br> 2° Puxador  . <br> 3° remada unilateral  . <br> 4° Remada curvada com pegada supinada <br> 5°  remada sentada com pegada neutra.  <br> <h1> 3° dia: Perna</h1> <br>   1° Agachamento  <br> 2° Extensora . <br> 3°  Leg Press . <br> 4°  Stiff. <br> 5° Panturrilha Cavalinho . <br> 6° Flexora <br>  <h1>4° dia: Ombro </h1> 1° Desenvolvimento <br> 2° Elevação lateral . <br> 3° Elevação frontal . <br> 4°  crucifixo invertido.  <br> <br> <h1> 5° dia: Braços </h1>  <br>  1° Rosca bíceps apoiado no banco Scott e com a barra EZ. <br> 2°  Rosca bíceps com halteres no banco inclinado. <br> 3° Rosca bíceps martelo em pé com halteres. <br> 4° tríceps corda. <br> 5° tríceps testa <br> 6° tríceps na barra. <br> <h1> 6° dia: peito  </h1>   1°supino reto. <br> 2°Supino inclinado . <br> 3° CrossOver <br> 4° Supino reto com halter <br> <h1> 7° dia: dorsal </h1> 1° pull Down. <br> 2° Puxador  . <br> 3° remada unilateral  . <br> 4° Remada curvada com pegada supinada <br> 5°  remada sentada com pegada neutra.  <br>  <br> Lembrando que todos são 4 série de 12 repetições`
-
-}
-else{
-    div_resposta.innerHTML = `A quantidade miníma de tempo é 30 min`
-}
+localStorage.setItem('dias', dias)
+localStorage.setItem('minutos', minutos)
+location.href="treino.html"
 
 }
 
