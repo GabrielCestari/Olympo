@@ -47,6 +47,10 @@ a{
 
 .treinoTexto{
     color: red;
+    /* display: flex;
+    flex-wrap: wrap; */
+    
+    
 }
 
 
