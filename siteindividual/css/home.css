@@ -35,10 +35,19 @@ body{
     list-style: none;
     justify-content: space-evenly;  
 }
-a{
+.NavBar a{
     text-decoration: none;
     color: red;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
 }
+.NavBar a:hover{
+background: red;
+color: aliceblue;
+}
+
 .header a{
     background-color: #000000;
     padding: 5px;
@@ -128,6 +137,12 @@ a{
     display: flex;
     justify-content: space-evenly;
 } 
+.texto img {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px red;
+    
+
+    }
 
 .roda-pe {
     border-top: red 4px solid;

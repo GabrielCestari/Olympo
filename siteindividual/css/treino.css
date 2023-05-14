@@ -46,11 +46,11 @@ a{
 }
 
 .treinoTexto{
-    color: black;
+    color: red;
     position: relative;
     height: 80%;
     width: 100vw;
-    background: url(../img/ilustracao-ares-escudo-lanca.webp);
+   background-color: #000000;
     background-size: cover;
    
     
@@ -65,37 +65,14 @@ a{
      /* background-color: black; */
     
 }
-.dia1{
+.dias{
     border: 30px solid transparent;
     font-size: 15px;
     border-image: url("../img/—Pngtree—luxury\ gold\ border_3424737.png") 250 round;
     border-radius: 10px;
     
 }
-.dia2{
-    border: 30px solid transparent;
-    font-size: 15px;
-    border-image: url("../img/—Pngtree—luxury\ gold\ border_3424737.png") 250 round;
-    border-radius: 10px;
-}
-.dia3{
-    border: 30px solid transparent;
-    font-size: 15px;
-    border-image: url("../img/—Pngtree—luxury\ gold\ border_3424737.png") 250 round;
-    border-radius: 10px;
-}
-.dia4{
-    border: 30px solid transparent;
-    font-size: 15px;
-    border-image: url("../img/—Pngtree—luxury\ gold\ border_3424737.png") 250 round;
-    border-radius: 10px;
-}
-.dia5{
-    border: 30px solid transparent;
-    font-size: 15px;
-    border-image: url("../img/—Pngtree—luxury\ gold\ border_3424737.png") 250 round;
-    border-radius: 10px;
-}
+
 
 
 .roda-pe {
