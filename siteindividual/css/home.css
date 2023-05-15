@@ -74,10 +74,10 @@ color: aliceblue;
     align-items: center;
     border-radius: 10px;
 }
-.rocky a{
+.rocky h1{
     font-family:'Times New Roman', Times, serif;
     font-size: xx-large;
-    color: white;
+    color: rgb(255, 255, 255, 0.6);
 }
 
 .historia {
@@ -87,7 +87,6 @@ color: aliceblue;
     display: flex;
     justify-content: space-around;
     border-bottom: red 4px solid;
-    border-top: red 4px solid;
     
     
 }
@@ -100,6 +99,7 @@ color: aliceblue;
    width: 17%;
    margin-bottom: 2%;
    border-radius: 2%;
+   box-shadow: 2px 2px 2px 1px red;
 }
 
 .historia h1 {
@@ -137,11 +137,16 @@ color: aliceblue;
     display: flex;
     justify-content: space-evenly;
 } 
-.texto img {
+
+.imgref img{
     border-radius: 10px;
     box-shadow: 2px 2px 2px 1px red;
-    
+}
 
+.imgref  img:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
     }
 
 .roda-pe {
