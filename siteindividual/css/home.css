@@ -1,0 +1,168 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    background-image: linear-gradient(black, black);
+    background-attachment: fixed;
+    margin: 0;
+}
+.container-header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.header{
+    width: 100%;
+    background-color:#000000;
+    border-bottom: red 4px solid;
+    
+}
+.header .container-header{
+    justify-content: space-between;
+    align-items: center;
+}
+.header img{
+    width: 150px;
+    height: 150px;
+    border-radius: 120px;
+    
+    
+}
+.NavBar{
+    width: 400px;
+    display: flex;
+    color: red;
+    list-style: none;
+    justify-content: space-evenly;  
+}
+.NavBar a{
+    text-decoration: none;
+    color: red;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.NavBar a:hover{
+background: red;
+color: aliceblue;
+}
+
+.header a{
+    background-color: #000000;
+    padding: 5px;
+    font-size: larger;
+}
+
+
+.container-intro{
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    background: url(../img/imagem\ certa.jfif);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rocky{
+    
+    height: 30vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.rocky h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: rgb(255, 255, 255, 0.6);
+}
+
+.historia {
+   margin: auto;
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: red 4px solid;
+    
+    
+}
+
+.historia img {
+    display: flex;
+    margin-left: 2%;
+    margin-top: 2%;
+   height: 15%;
+   width: 17%;
+   margin-bottom: 2%;
+   border-radius: 2%;
+   box-shadow: 2px 2px 2px 1px red;
+}
+
+.historia h1 {
+   font-size: large;
+   font-family:'Times New Roman', Times, serif;
+   color: red;
+  
+   
+   
+}
+
+.texto1 {
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+    color: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30% ;
+    height: 15%;
+
+  
+    
+}
+.Referencias h1{
+    
+   font-family:'Times New Roman', Times, serif;
+   color: red;
+}
+
+.texto {
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+    color: red;
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+.imgref img{
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px red;
+}
+
+.imgref  img:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    }
+
+.roda-pe {
+    border-top: red 4px solid;
+    background-color: #000000;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.roda-pe a{
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+    color: red;
+    margin-top: 20px;
+}

@@ -1,0 +1,94 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    background-image: linear-gradient(black, black);
+    background-attachment: fixed;
+    margin: 0;
+}
+.container-header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.header{
+    width: 100%;
+    background-color:#000000;
+    border-bottom: red 4px solid;
+    
+}
+.header .container-header{
+    justify-content: space-between;
+    align-items: center;
+}
+.header img{
+    width: 150px;
+    height: 150px;
+    border-radius: 120px;
+    
+    
+}
+.NavBar{
+    width: 400px;
+    display: flex;
+    color: red;
+    list-style: none;
+    justify-content: space-evenly;  
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+.header a{
+    background-color: #000000;
+    padding: 5px;
+    font-size: larger;
+}
+
+.treinoTexto{
+    color: red;
+    position: relative;
+    height: 80%;
+    width: 100vw;
+   background-color: #000000 ;
+    background-size: cover;
+   
+    
+    
+}
+.diasT{
+    display: flex;
+     flex-wrap: wrap; 
+     width: 70%;
+     justify-content: space-evenly;
+     margin-left: 2%;
+     /* background-color: black; */
+    
+}
+.dias{
+    border: 30px solid transparent;
+    font-size: 15px;
+    border-image: url("../img/—Pngtree—luxury\ gold\ border_3424737.png") 250 round;
+    border-radius: 10px;
+    
+}
+
+
+
+.roda-pe {
+    border-top: red 4px solid;
+    background-color: #000000;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.roda-pe a{
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+    color: red;
+    margin-top: 20px;
+}
