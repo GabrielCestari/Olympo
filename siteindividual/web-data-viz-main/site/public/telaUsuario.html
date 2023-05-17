@@ -1,63 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/tela.css" />
-    <script src="js/funcoes.js"></script>
-  </head>
-  <body onload="validarSessao(), atualizacaoPeriodica()">
-    <div class="janela">
-      <div class="header-left dash-header">
-        <h1>Olympo</h1>
 
-        <div class="hello">
-          <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/tela.css" />
+  <script src="js/funcoes.js"></script>
+</head>
 
-        <div class="btn-nav">
-          <h3>Opções</h3>
-        </div>
+<body onload="validarSessao(), atualizacaoPeriodica()">
+  <div class="janela">
+    <div class="header-left dash-header">
+      <h1>Olympo</h1>
 
-        <div class="btn-nav-white">
-          <a href="simulador.html">
-            <h3>Simulador</h3>
-          </a>
-        </div>
-
-        <div class="btn-nav-white">
-          <a href="./mural.html">
-            <h3>Quiz</h3>
-          </a>
-        </div>
-        <div class="btn-nav-white">
-            <a href="./mural.html">
-              <h3>Aulas</h3>
-            </a>
-          </div>
-
-        <div class="btn-logout" onclick="limparSessao()">
-          <h3>Sair</h3>
-        </div>
+      <div class="hello">
+        <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
       </div>
-      <div class="visao">
-        <div class="ares">
-            <img src="img/romano.png" alt="">
-            <div class="dados">
-                <h1>Dados</h1>
-    
-                
-            </div>
+
+      <div class="btn-nav">
+        <h3>Opções</h3>
+      </div>
+
+      <div class="btn-nav-white">
+        <a href="simulador.html">
+          <h3>Simulador</h3>
+        </a>
+      </div>
+
+      <div class="btn-nav-white">
+        <a href="quiz.html">
+          <h3>Quiz</h3>
+        </a>
+      </div>
+      <div class="btn-nav-white">
+        <a href="./mural.html">
+          <h3>Aulas</h3>
+        </a>
+      </div>
+
+      <div class="btn-logout" onclick="limparSessao()">
+        <h3>Sair</h3>
       </div>
     </div>
-    </div>
-
-       
-
-
-    
   
-  </body>
+  </div>
+  <div class="visao"></div>
+
+
+
+
+
+
+</body>
+
 </html>

@@ -139,6 +139,7 @@ color: aliceblue;
 } 
 
 .imgref img{
+    height: 40vh;
     border-radius: 10px;
     box-shadow: 8px 8px 8px 3px rgb(254, 91, 153);
 }

@@ -6,7 +6,7 @@ body {
     display: flex;
     position: relative;
     justify-content: center;
-    width: 100%;
+    width: 20%;
     height: 130vh;
   }
 
@@ -91,7 +91,7 @@ text-decoration: none;
   }
 
   .visao {
-    width: 100%;
+    width: 80%;
     top: -10%;
     left: 20%;
     background-color: black;
@@ -102,18 +102,20 @@ text-decoration: none;
     justify-content: center;    
   }
 
-  .ares img {
-    width: 100%;
+  .dados img {
+    width: 50%;
     height: 25%;
     margin-top: 10%;
   }
 
   .dados{
-    position: relative;
-    margin-right: 100px;
     background-color: grey;
-    width: 200%;
+    margin-left: 20%;
+    width: 80%;
     height: 40%;
     display: flex;
     justify-content: center;
   }
+    
+  
+    
