@@ -14,7 +14,7 @@ body{
 .header{
     width: 100%;
     background-color:#000000;
-    border-bottom: red 4px solid;
+    border-bottom: rgb(254, 91, 153) 4px solid;
     
 }
 .header .container-header{
@@ -31,13 +31,13 @@ body{
 .NavBar{
     width: 400px;
     display: flex;
-    color: red;
+    color: rgb(254, 91, 153);
     list-style: none;
     justify-content: space-evenly;  
 }
 a{
     text-decoration: none;
-    color: red;
+    color: rgb(254, 91, 153);
 }
 .header a{
     background-color: #000000;
@@ -46,7 +46,7 @@ a{
 }
 
 .treinoTexto{
-    color: red;
+    color: white;
     position: relative;
     height: 80%;
     width: 100vw;
@@ -76,7 +76,7 @@ a{
 
 
 .roda-pe {
-    border-top: red 4px solid;
+    border-top: rgb(254, 91, 153) 4px solid;
     background-color: #000000;
     margin: auto;
     display: flex;
@@ -89,6 +89,6 @@ a{
 .roda-pe a{
     font-size: large;
     font-family:'Times New Roman', Times, serif;
-    color: red;
+    color: rgb(254, 91, 153);
     margin-top: 20px;
 }

@@ -14,7 +14,7 @@ body{
 .header{
     width: 100%;
     background-color:#000000;
-    border-bottom: red 4px solid;
+    border-bottom: rgb(254, 91, 153) 4px solid;
     
 }
 .header .container-header{
@@ -31,13 +31,13 @@ body{
 .NavBar{
     width: 400px;
     display: flex;
-    color: red;
+    color: rgb(254, 91, 153);
     list-style: none;
     justify-content: space-evenly;  
 }
 a{
     text-decoration: none;
-    color: red;
+    color: white;
 }
 .header a{
     background-color: #000000;
@@ -59,7 +59,7 @@ a{
 }
     
 .treino{
-    color: red;
+    color: white;
     display: flex;
     flex-direction: column;
     background-color: rgb(0, 0, 0, 0.8);
@@ -72,7 +72,7 @@ a{
     
 }
 .botão {
-    background-color: red;
+    background-color: rgb(254, 91, 153);
     border-radius: 10px;
     width: 100px;
     
@@ -86,19 +86,19 @@ a{
     align-items: center;
     outline: none;
     color: white;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid rgb(254, 91, 153);
 
 }
 .resposta {
 background-color: rgb(73, 9, 9);
-color: red;
+color: white;
 border-radius: 1opx;
 
 }
 
 
 .roda-pe {
-    border-top: red 4px solid;
+    border-top: rgb(254, 91, 153) 4px solid;
     background-color: #000000;
     margin: auto;
     display: flex;
@@ -111,7 +111,7 @@ border-radius: 1opx;
 .roda-pe a{
     font-size: large;
     font-family:'Times New Roman', Times, serif;
-    color: red;
+    color: rgb(254, 91, 153);
     margin-top: 2%;
 }
 

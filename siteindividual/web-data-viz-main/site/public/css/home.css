@@ -14,7 +14,7 @@ body{
 .header{
     width: 100%;
     background-color:#000000;
-    border-bottom: red 4px solid;
+    border-bottom: rgb(254, 91, 153) 4px solid;
     
 }
 .header .container-header{
@@ -31,20 +31,20 @@ body{
 .NavBar{
     width: 400px;
     display: flex;
-    color: red;
+    color: rgb(254, 91, 153);
     list-style: none;
     justify-content: space-evenly;  
 }
 .NavBar a{
     text-decoration: none;
-    color: red;
+    color: rgb(254, 91, 153);
     padding: 6px 15px;
     border-radius: 20px;
     margin: 0 10px;
     font-weight: 600;
 }
 .NavBar a:hover{
-background: red;
+background: rgb(254, 91, 153, 0.6);
 color: aliceblue;
 }
 
@@ -58,7 +58,7 @@ color: aliceblue;
 .container-intro{
     position: relative;
     height: 80vh;
-    width: 100vw;
+    width: 100%;
     background: url(../img/imagem\ certa.jfif);
     background-size: cover;
     display: flex;
@@ -86,7 +86,7 @@ color: aliceblue;
     border-radius: 5px;
     display: flex;
     justify-content: space-around;
-    border-bottom: red 4px solid;
+    border-bottom: rgb(254, 91, 153) 4px solid;
     
     
 }
@@ -99,13 +99,13 @@ color: aliceblue;
    width: 17%;
    margin-bottom: 2%;
    border-radius: 2%;
-   box-shadow: 2px 2px 2px 1px red;
+   box-shadow: 8px 8px 8px 3px rgb(254, 91, 153);
 }
 
 .historia h1 {
    font-size: large;
    font-family:'Times New Roman', Times, serif;
-   color: red;
+   color: white;
   
    
    
@@ -114,7 +114,7 @@ color: aliceblue;
 .texto1 {
     font-size: large;
     font-family:'Times New Roman', Times, serif;
-    color: red;
+    color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -127,30 +127,30 @@ color: aliceblue;
 .Referencias h1{
     
    font-family:'Times New Roman', Times, serif;
-   color: red;
+   color: white;
 }
 
 .texto {
     font-size: large;
     font-family:'Times New Roman', Times, serif;
-    color: red;
+    color: white;
     display: flex;
     justify-content: space-evenly;
 } 
 
 .imgref img{
     border-radius: 10px;
-    box-shadow: 2px 2px 2px 1px red;
+    box-shadow: 8px 8px 8px 3px rgb(254, 91, 153);
 }
 
 .imgref  img:hover {
     transform: scale(1.1);
-    transition: 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
     cursor: pointer;
     }
 
 .roda-pe {
-    border-top: red 4px solid;
+    border-top: rgb(254, 91, 153) 4px solid;
     background-color: #000000;
     margin: auto;
     display: flex;
@@ -163,6 +163,6 @@ color: aliceblue;
 .roda-pe a{
     font-size: large;
     font-family:'Times New Roman', Times, serif;
-    color: red;
+    color: rgb(254, 91, 153);
     margin-top: 20px;
 }
