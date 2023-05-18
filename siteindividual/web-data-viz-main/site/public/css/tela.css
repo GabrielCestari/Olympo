@@ -1,5 +1,10 @@
 body {
     margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+  display: flex;
 }
 .janela {
     background-color: black;
@@ -91,12 +96,11 @@ text-decoration: none;
   }
 
   .visao {
-    width: 80%;
+    width: 100%;
     top: -10%;
     left: 20%;
     background-color: black;
-    margin-left: 20%;
-    height: 120vh;
+    height: 100vh;
     overflow: auto;
     display: flex;
     justify-content: center;    
