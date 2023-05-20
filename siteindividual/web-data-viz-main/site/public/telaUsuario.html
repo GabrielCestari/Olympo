@@ -15,21 +15,21 @@
     <div class="janela">
       <div class="header-left dash-header">
         <h1>Olympo</h1>
-  
+
         <div class="hello">
           <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
         </div>
-  
+
         <div class="btn-nav">
           <h3>Opções</h3>
         </div>
-  
+
         <div class="btn-nav-white">
           <a href="simulador.html">
             <h3>Simulador</h3>
           </a>
         </div>
-  
+
         <div class="btn-nav-white">
           <a href="quiz.html">
             <h3>Quiz</h3>
@@ -40,14 +40,21 @@
             <h3>Aulas</h3>
           </a>
         </div>
-  
+
         <div class="btn-logout" onclick="limparSessao()">
           <h3>Sair</h3>
         </div>
       </div>
-    
+
     </div>
-    <div class="visao"></div>
+    <div class="visao">
+      <div class="dados_usuario">
+        <img src="img/romano.png" alt="">
+
+        <h1>Dados pessoas</h1>
+        <li>Nome <span id="nome">usuário</span></li>
+      </div>
+    </div>
   </div>
 
 
@@ -58,3 +65,11 @@
 </body>
 
 </html>
+<script>
+
+  localStorage.getItem('nome')
+localStorage.getItem('sobrenome')
+localStorage.getItem('email')
+localStorage.getItem('senha')
+
+</script>

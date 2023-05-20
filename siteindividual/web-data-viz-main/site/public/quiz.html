@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/quiz.css">
+    <title>Quiz Interativo</title>
+    <link rel="stylesheet" type="text/css" href="css/quiz.css">
 </head>
+
 <body>
-<div class="quiz">
-    <h1>Descubra seu nível de experiência </h1>
-    Ao  clicar em começar, o quiz irá se iniciar.
+    <div class="card">
+        <h1>Quiz Interativo</h1>
+        <div id="quiz-container">
+            <h2 id="question"></h2>
+            <ul id="options"></ul>
+            <button id="submit-btn">Submit</button>
+        </div>
 
-    <button onclick="comecar()">Começar</button>
+    </div>
 
-
-</div>
-
-    
+    <script src="js/quiz.js"></script>
 </body>
+
 </html>

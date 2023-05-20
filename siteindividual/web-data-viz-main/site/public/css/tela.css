@@ -97,29 +97,23 @@ text-decoration: none;
 
   .visao {
     width: 100%;
-    top: -10%;
-    left: 20%;
     background-color: black;
-    height: 100vh;
+    height: 150vh;
     overflow: auto;
     display: flex;
     justify-content: center;    
   }
 
-  .dados img {
-    width: 50%;
-    height: 25%;
-    margin-top: 10%;
+  .visao img {
+    
+    height: 30vh;
   }
 
-  .dados{
-    background-color: grey;
-    margin-left: 20%;
-    width: 80%;
-    height: 40%;
-    display: flex;
-    justify-content: center;
+  .dados_usuario{
+    background-color: beige;
   }
+
+  
     
   
     
