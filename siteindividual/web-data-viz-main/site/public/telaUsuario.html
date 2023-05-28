@@ -11,48 +11,51 @@
 </head>
 
 <body onload="validarSessao(), atualizacaoPeriodica()">
-  <div class="container">
-    <div class="janela">
-      <div class="header-left dash-header">
+  <div class="geral">  
+    <div class="container"> 
+      <div class="coluna"> 
         <h1>Olympo</h1>
 
-        <div class="hello">
+        <div class="Bem-vindo">
           <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
         </div>
 
-        <div class="btn-nav">
+        <div class="Opções"> 
           <h3>Opções</h3>
         </div>
 
-        <div class="btn-nav-white">
+        <div class="caminhos"> 
           <a href="simulador.html">
             <h3>Simulador</h3>
           </a>
         </div>
 
-        <div class="btn-nav-white">
-          <a href="quiz.html">
-            <h3>Quiz</h3>
+        <div class="caminhos">
+          <a href="jogo.html">
+            <h3>exercicios</h3>
           </a>
         </div>
-        <div class="btn-nav-white">
-          <a href="./mural.html">
-            <h3>Aulas</h3>
+        <div class="caminhos"> 
+          <a href="./graficos.html">
+            <h3>Suas preferencias</h3>
           </a>
         </div>
 
-        <div class="btn-logout" onclick="limparSessao()">
+        <div class="sair" onclick="limparSessao()"> 
           <h3>Sair</h3>
         </div>
       </div>
 
     </div>
     <div class="visao">
-      <div class="dados_usuario">
+      <div >
         <img src="img/romano.png" alt="">
-
-        <h1>Dados pessoas</h1>
-        <li>Nome <span id="nome">usuário</span></li>
+        <div class="dados">
+          <h1>Dados pessoas</h1>
+          <h3>Nome : <span id="b_usuario">usuário</span></h3>
+          <h3>Sobrenome : <span id="b_usuario">usuário</span></h3>
+          <h3>Email : <span id="b_usuario">usuário</span></h3>
+        </div>
       </div>
     </div>
   </div>
@@ -68,8 +71,8 @@
 <script>
 
   localStorage.getItem('nome')
-localStorage.getItem('sobrenome')
-localStorage.getItem('email')
-localStorage.getItem('senha')
+  localStorage.getItem('sobrenome')
+  localStorage.getItem('email')
+  localStorage.getItem('senha')
 
 </script>

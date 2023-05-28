@@ -66,9 +66,9 @@ a{
     
 }
 .dias{
-    border: 30px solid transparent;
+    border: 1px solid white;
     font-size: 15px;
-    border-image: url("../img/—Pngtree—webcam\ overlay\ neon\ border\ purple_8426579.png") 250 round;
+    
     border-radius: 10px;
     
 }

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jogo.css" />
+    <script src="js/funcoes.js"></script>
+</head>
+
+<body onload="validarSessao()">
+    <div class="geral">
+        <div class="container">
+            <div class="coluna">
+                <h1>Olympo</h1>
+
+                <div class="Bem-vindo">
+                    <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+                </div>
+
+                <div class="Opções">
+                    <h3>Opções</h3>
+                </div>
+
+                <div class="caminhos">
+                    <a href="simulador.html">
+                        <h3>Simulador</h3>
+                    </a>
+                </div>
+
+                <div class="caminhos">
+                    <a href="jogo.html">
+                        <h3>exercicios</h3>
+                    </a>
+                </div>
+                <div class="caminhos">
+                    <a href="./graficos.html">
+                        <h3>Suas preferencias</h3>
+                    </a>
+                </div>
+
+                <div class="sair" onclick="limparSessao()">
+                    <h3>Sair</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="escolha">
+       <h1> Dicas de exercicios</h1>
+
+        Selecione o Músculo
+        <select name="select" id="id_valor">
+            <option value="Peito">Peito</option>
+            <option value="costas" >costas</option>
+            <option value="perna">Perna</option>
+            <option value="braco">Braço</option>
+          </select> <br>
+
+          Quantidades de exercicios
+        <select name="escolha" id="id_qntd">
+            <option value="1">1</option>
+            <option value="2" >2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+
+          <button onclick="gerar()" class="gerar">Gerar</button>
+
+        </div>
+
+          <div id="div_bula" class="div_gif"></div> 
+         
+         
+          
+          
+
+     </div>
+</body>
+</html>
+<script>
+    var lista = ["peito", "costas", "perna", "braco" ]
+    
+    
+   
+function gerar(){
+
+    var muscu = id_valor.value
+    var qntd = id_qntd.value
+    div_bula.innerHTML = ""
+if(muscu = lista[0]){
+    for(var contador = 1; contador <= qntd; contador++){
+        if(contador == 1 ){
+            div_bula.innerHTML += `${contador}° <img  style="height: 200px;" src="img/supino-reto.webp " alt="">`
+
+        } else if(contador == 2 ){
+            div_bula.innerHTML += `${contador}° <img style="height: 200px;" src="img/voador-no-aparelho.webp" alt=""> <br>`
+
+        } else if(contador == 3 ){
+            div_bula.innerHTML += `${contador}°  <img  style="height: 200px;" src="img/flexao-de-bracos.webp" alt="">`
+
+        }else {
+            div_bula.innerHTML += `${contador}°  <img  style="height: 200px;" src="img/supino-inclinado-com-barra.webp" alt=""> `
+        }
+        
+    }
+
+} else if(muscu = lista[1]){
+    for(var contador2 = 1; contador2 <= qntd; contador2++){
+        if(contador2 == 1 ){
+            div_bula.innerHTML += `${contador2}° img style="width: 200px;" src="img/cavalinho.webp" alt="">`
+
+        } else if(contador2 == 2 ){
+            div_bula.innerHTML += `${contador2}° <img style="width: 200px;" src="img/puxada.webp" alt=""> <br>`
+
+        } else if(contador2 == 3 ){
+            div_bula.innerHTML += `${contador2}° <img style="width: 200px;" src="img/remada.webp" alt=""> `
+
+        }else {
+            div_bula.innerHTML += `${contador2}°  <img style="width: 200px;" src="img/remada-unilateral.webp" alt="">`
+        }
+        
+    }
+
+}else if(muscu = lista[2]){
+    for(var contador2 = 1; contador2 <= qntd; contador2++){
+        if(contador2 == 1 ){
+            div_bula.innerHTML += `${contador2}°  <img style="width: 200px;" src="img/bulgaro.gif" alt="">`
+
+        } else if(contador2 == 2 ){
+            div_bula.innerHTML += `${contador2}°  <img style="width: 200px;" src="img/Leg-Press.gif" alt=""> <br>`
+
+        } else if(contador2 == 3 ){
+            div_bula.innerHTML += `${contador2}° <img style="width: 200px;" src="img/stiff.gif" alt="">`
+
+        }else {
+            div_bula.innerHTML += `${contador2}°   <img style="width: 200px;" src="img/agachamento.webp" alt="">`
+        }
+        
+    }
+
+}else if(muscu = lista[3]){
+    for(var contador2 = 1; contador2 <= qntd; contador2++){
+        if(contador2 == 1 ){
+            div_bula.innerHTML += `${contador2}°  <img  style="height: 200px;" src="img/martelo.webp" alt="">`
+
+        } else if(contador2 == 2 ){
+            div_bula.innerHTML += `${contador2}° <img  style="height: 200px;" src="img/rosca-biceps.webp" alt=""> <br>`
+
+        } else if(contador2 == 3 ){
+            div_bula.innerHTML += `${contador2}°  <img  style="height: 200px;" src="img/triceps-p.webp" alt="">`
+
+        }else {
+            div_bula.innerHTML += `${contador2}°  <img  style="height: 200px;" src="img/triceps-nuca.webp" alt="">`
+        }
+        
+    }
+
+}
+
+
+}
+
+</script>
