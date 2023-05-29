@@ -20,8 +20,10 @@
           <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
         </div>
 
-        <div class="Opções"> 
-          <h3>Opções</h3>
+        <div class="caminhos"> 
+          <a href="telaUsuario.html">
+            <h3>Perfil</h3>
+          </a>
         </div>
 
         <div class="caminhos"> 
@@ -48,13 +50,10 @@
 
     </div>
     <div class="visao">
-      <div >
-        <img src="img/romano.png" alt="">
-        <div class="dados">
-          <h1>Dados pessoas</h1>
-          <h3>Nome : <span id="b_usuario">usuário</span></h3>
-          <h3>Sobrenome : <span id="b_usuario">usuário</span></h3>
-          <h3>Email : <span id="b_usuario">usuário</span></h3>
+      <div > 
+        <img src="img/romano.png" alt=""> <br> <br>
+        <div class="dados" id="div_dados">
+          
         </div>
       </div>
     </div>
@@ -70,9 +69,15 @@
 </html>
 <script>
 
-  localStorage.getItem('nome')
-  localStorage.getItem('sobrenome')
-  localStorage.getItem('email')
-  localStorage.getItem('senha')
+  var nome = localStorage.getItem('nome')
+  var sobrenome = localStorage.getItem('sobrenome')
+  var email = localStorage.getItem('email')
+  var senha = localStorage.getItem('senha')
+
+  div_dados.innerHTML = `<h1>Dados pessoais</h1> <br>
+          <h3>Nome : ${nome}</h3> <br>
+          <h3>Sobrenome : ${sobrenome}</h3> <br>
+          <h3>Email : ${email}</h3> <br>
+          <h3>Senha : ${senha}</h3>`
 
 </script>

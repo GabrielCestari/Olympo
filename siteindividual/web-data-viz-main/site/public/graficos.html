@@ -2,101 +2,106 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/grafi.css" />
-    <script src="js/funcoes.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/grafi.css" />
+  <script src="js/funcoes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body onload="validarSessao(), atualizacaoPeriodica()">
-    <div class="geral">
-        <div class="container">
-            <div class="coluna">
-                <h1>Olympo</h1>
+  <div class="geral">
+    <div class="container">
+      <div class="coluna">
+        <h1>Olympo</h1>
 
-                <div class="Bem-vindo">
-                    <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
-                </div>
-
-                <div class="Opções">
-                    <h3>Opções</h3>
-                </div>
-
-                <div class="caminhos">
-                    <a href="simulador.html">
-                        <h3>Simulador</h3>
-                    </a>
-                </div>
-
-                <div class="caminhos">
-                    <a href="jogo.html">
-                        <h3>exercicios</h3>
-                    </a>
-                </div>
-                <div class="caminhos">
-                    <a href="./graficos.html">
-                        <h3>Suas preferencias</h3>
-                    </a>
-                </div>
-
-                <div class="sair" onclick="limparSessao()">
-                    <h3>Sair</h3>
-                </div>
-            </div>
-
+        <div class="Bem-vindo">
+          <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
         </div>
 
-    </div>
-    <div>
-        <canvas id="myChart" class="grafico1"></canvas>
-      </div> 
-      <div>
-        <canvas id="myChart2" class="grafico1"></canvas>
+        <div class="caminhos">
+          <a href="telaUsuario.html">
+            <h3>Perfil</h3>
+          </a>
+        </div>
+
+        <div class="caminhos">
+          <a href="simulador.html">
+            <h3>Simulador</h3>
+          </a>
+        </div>
+
+        <div class="caminhos">
+          <a href="jogo.html">
+            <h3>exercicios</h3>
+          </a>
+        </div>
+        <div class="caminhos">
+          <a href="./graficos.html">
+            <h3>Suas preferencias</h3>
+          </a>
+        </div>
+
+        <div class="sair" onclick="limparSessao()">
+          <h3>Sair</h3>
+        </div>
       </div>
+
+    </div>
+
+  </div>
+  <div class="tela">
+    <div class="grafico">
+      <canvas id="myChart" class="grafico1"></canvas>
+    </div>
+    <div class="grafico">
+      <canvas id="myChart2" class="grafico1"></canvas>
+    </div>
+  </div>
 </body>
+
 </html>
 <script>
   var gra1 = document.getElementById('myChart');
   var gra2 = document.getElementById('myChart2');
-new Chart(gra1, {
-  type: 'bar',
-  data: {
-    labels: ['Leo estronda', 'Chris bumstead', 'Ramon dino', 'Alex Eubank', 'David Laid', 'Fabio Giga'],
-    datasets: [{
-      label: 'Influencer preferido',
-      data: [12, 19, 3, 5, 2, 3],
-      borderWidth: 1
-    }]
-  },
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true
+  new Chart(gra1, {
+    type: 'bar',
+    data: {
+      labels: ['Leo estronda', 'Chris bumstead', 'Ramon dino', 'Alex Eubank', 'David Laid', 'Fabio Giga'],
+      datasets: [{
+        label: 'Influencer preferido',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
       }
     }
-  }
-});
+  });
 
-new Chart(gra2, {
-  type: 'bar',
-  data: {
-    labels: ['Growth', 'Max titanium', 'Probiótica', 'integral Medica', 'Black Skull'],
-    datasets: [{
-      label: 'Marca de suplementos favorita',
-      data: [12, 19, 3, 5, 2, 3],
-      borderWidth: 1
-    }]
-  },
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true
+  new Chart(gra2, {
+    type: 'bar',
+    data: {
+      labels: ['Growth', 'Max titanium', 'Probiótica', 'integral Medica', 'Black Skull'],
+      datasets: [{
+        label: 'Marca de suplementos favorita',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
       }
     }
-  }
-});
+  });
 
 </script>

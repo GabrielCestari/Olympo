@@ -97,9 +97,75 @@ function cadastrar(req, res) {
     }
 }
 
+function cadastrartreino(req, res) {
+    // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
+    var dias = req.body.diasServer;
+    var minutos = req.body.minutosServer;
+   
+
+    // Faça as validações dos valores
+    if (dias == undefined) {
+        res.status(400).send("Seu dia está undefined!");
+    } else if (minutos == undefined) {
+        res.status(400).send("Seu tempo está undefined!");
+    } else {
+        
+        // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
+        usuarioModel.cadastrartreino(dias, minutos)
+            .then(
+                function (resultado) {
+                    res.json(resultado);
+                }
+            ).catch(
+                function (erro) {
+                    console.log(erro);
+                    console.log(
+                        "\nHouve um erro ao realizar o cadastro! Erro: ",
+                        erro.sqlMessage
+                    );
+                    res.status(500).json(erro.sqlMessage);
+                }
+            );
+    }
+}
+
+function cadastrarfavorito(req, res) {
+    // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
+    var marca = req.body.marcaServer;
+    var influencer = req.body.influencerServer;
+   
+
+    // Faça as validações dos valores
+    if (marca == undefined) {
+        res.status(400).send("Seu dia está undefined!");
+    } else if (influencer == undefined) {
+        res.status(400).send("Seu tempo está undefined!");
+    } else {
+        
+        // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
+        usuarioModel.cadastrarfavorito(marca, influencer)
+            .then(
+                function (resultado) {
+                    res.json(resultado);
+                }
+            ).catch(
+                function (erro) {
+                    console.log(erro);
+                    console.log(
+                        "\nHouve um erro ao realizar o cadastro! Erro: ",
+                        erro.sqlMessage
+                    );
+                    res.status(500).json(erro.sqlMessage);
+                }
+            );
+    }
+}
+
 module.exports = {
     entrar,
     cadastrar,
+    cadastrartreino,
+    cadastrarfavorito,
     listar,
     testar
 }

@@ -5,45 +5,102 @@ body{
     background-image: linear-gradient(black, black);
     background-attachment: fixed;
     margin: 0;
+    overflow-x: hidden;
 }
-.container-header{
+
+.geral {
     display: flex;
-    width: 90%;
-    margin: auto;
-}
-.header{
-    width: 100%;
-    background-color:#000000;
-    border-bottom: rgb(254, 91, 153) 4px solid;
+  }
+  .conteiner {
+      background-color: black;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      width: 22%;
+      height: 130vh;
+    }
+  
+    .coluna a {
+      text-decoration: none;
+      color: white;
+    }
     
-}
-.header .container-header{
-    justify-content: space-between;
-    align-items: center;
-}
-.header img{
-    width: 150px;
-    height: 150px;
-    border-radius: 120px;
+    .coluna {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      height: 100vh;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      border-right: 4px solid rgb(254, 91, 153);
+      background-color: black;
+      /* border: 3px solid pink; */
+    }
     
+  .coluna h1 {
+      color: white;
+    }
     
-}
-.NavBar{
-    width: 400px;
-    display: flex;
-    color: rgb(254, 91, 153);
-    list-style: none;
-    justify-content: space-evenly;  
-}
-a{
-    text-decoration: none;
-    color: rgb(254, 91, 153);
-}
-.header a{
-    background-color: #000000;
-    padding: 5px;
-    font-size: larger;
-}
+    .Bem-vindo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: white;
+    }
+    
+  .Opções {
+      width: 40%;
+      color: white;
+      background-color: rgb(230, 0, 90);
+      border-radius: 5px;
+      text-align: center;
+      padding: 2% 5%;
+    }
+    
+    .caminhos {
+      width: 40%;
+      background-color: rgb(254, 91, 153);
+      border: 3px solid #e6005a;
+      border-radius: 5px;
+      text-align: center;
+      padding: 2% 5%;
+    }
+  
+    .caminhos a {
+  text-decoration: none;
+    }
+  
+    
+    .caminhos h3 {
+      color: white;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .caminhos h3,
+    .sair h3 {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .sair {
+      margin: 0;
+      padding: 0;
+      width: 20%;
+      background-color: rgb(254, 91, 153) ;
+      color: white;
+      border-radius: 10px;
+      text-align: center;
+      padding: 10px 15px;
+      margin-bottom: 100px;
+      cursor: pointer;
+    }
+  
+
 
 .treinoTexto{
     color: white;
@@ -52,6 +109,7 @@ a{
     width: 100vw;
    background-color: #000000 ;
     background-size: cover;
+    margin-left: 20%;
    
     
     

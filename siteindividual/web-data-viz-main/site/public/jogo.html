@@ -20,8 +20,10 @@
                     <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
                 </div>
 
-                <div class="Opções">
-                    <h3>Opções</h3>
+                <div class="caminhos">
+                    <a href="telaUsuario.html">
+                        <h3>Perfil</h3>
+                    </a>
                 </div>
 
                 <div class="caminhos">
@@ -55,7 +57,7 @@
 
         Selecione o Músculo
         <select name="select" id="id_valor">
-            <option value="Peito">Peito</option>
+            <option value="peito">Peito</option>
             <option value="costas" >costas</option>
             <option value="perna">Perna</option>
             <option value="braco">Braço</option>
@@ -85,8 +87,6 @@
 <script>
     var lista = ["peito", "costas", "perna", "braco" ]
     
-    
-   
 function gerar(){
 
     var muscu = id_valor.value
