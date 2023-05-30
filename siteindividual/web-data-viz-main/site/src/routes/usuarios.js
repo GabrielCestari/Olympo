@@ -16,10 +16,10 @@ router.post("/cadastrar", function (req, res) {
     usuarioController.cadastrar(req, res);
 });
 router.post("/cadastrartreino", function (req, res) {
-    usuarioController.cadastrar(req, res);
+    usuarioController.cadastrartreino(req, res);
 });
 router.post("/cadastrarfavorito", function (req, res) {
-    usuarioController.cadastrar(req, res);
+    usuarioController.cadastrarfavorito(req, res);
 });
 
 router.post("/autenticar", function (req, res) {

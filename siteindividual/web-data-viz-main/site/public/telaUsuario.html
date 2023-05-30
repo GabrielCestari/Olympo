@@ -52,8 +52,7 @@
     <div class="visao">
       <div > 
         <img src="img/romano.png" alt=""> <br> <br>
-        <div class="dados" id="div_dados">
-          
+        <div class="dados" id="div_dados">  
         </div>
       </div>
     </div>
@@ -68,11 +67,10 @@
 
 </html>
 <script>
-
-  var nome = localStorage.getItem('nome')
-  var sobrenome = localStorage.getItem('sobrenome')
-  var email = localStorage.getItem('email')
-  var senha = localStorage.getItem('senha')
+  var nome = sessionStorage.NOME_USUARIO;
+  var sobrenome = sessionStorage.SOBRENOME_USUARIO;
+  var email = sessionStorage.EMAIL_USUARIO;
+  var senha = sessionStorage.SENHA_USUARIO;
 
   div_dados.innerHTML = `<h1>Dados pessoais</h1> <br>
           <h3>Nome : ${nome}</h3> <br>
