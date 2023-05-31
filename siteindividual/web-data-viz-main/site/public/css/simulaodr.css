@@ -14,7 +14,7 @@ body{
     justify-content: center;
     background: url(../img/ironberg.jpeg);
     position: relative;
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
     background-size: cover;
     display: flex;
@@ -59,7 +59,7 @@ border-radius: 1opx;
 
 }
 
-
+/* 
 .roda-pe {
     border-top: rgb(254, 91, 153) 4px solid;
     background-color: #000000;
@@ -76,7 +76,7 @@ border-radius: 1opx;
     font-family:'Times New Roman', Times, serif;
     color: rgb(254, 91, 153);
     margin-top: 2%;
-}
+} */
 
 
 .geral {

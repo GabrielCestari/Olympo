@@ -124,6 +124,10 @@ text-decoration: none;
 
   }
 
+  .favorito{
+display: flex;
+justify-content: space-evenly;
+  }
   
     
   

@@ -120,10 +120,12 @@ text-decoration: none;
     border-radius: 10px;
     width: 100%;
     flex-direction: column;
+    border: 1px solid white;
   }
   .gerar{
     color: white;
     width: 25%;
     background-color: black;
     border: 1px solid white;
+    border-radius: 10px;
   }

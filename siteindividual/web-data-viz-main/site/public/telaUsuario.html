@@ -10,23 +10,23 @@
   <script src="js/funcoes.js"></script>
 </head>
 
-<body onload="validarSessao(), atualizacaoPeriodica()">
-  <div class="geral">  
-    <div class="container"> 
-      <div class="coluna"> 
+<body onload="validarSessao()">
+  <div class="geral">
+    <div class="container">
+      <div class="coluna">
         <h1>Olympo</h1>
 
         <div class="Bem-vindo">
           <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
         </div>
 
-        <div class="caminhos"> 
+        <div class="caminhos">
           <a href="telaUsuario.html">
             <h3>Perfil</h3>
           </a>
         </div>
 
-        <div class="caminhos"> 
+        <div class="caminhos">
           <a href="simulador.html">
             <h3>Simulador</h3>
           </a>
@@ -37,22 +37,45 @@
             <h3>exercicios</h3>
           </a>
         </div>
-        <div class="caminhos"> 
+        <div class="caminhos">
           <a href="./graficos.html">
             <h3>Suas preferencias</h3>
           </a>
         </div>
 
-        <div class="sair" onclick="limparSessao()"> 
+        <div class="sair" onclick="limparSessao()">
           <h3>Sair</h3>
         </div>
       </div>
 
     </div>
     <div class="visao">
-      <div > 
+      <div>
         <img src="img/romano.png" alt=""> <br> <br>
-        <div class="dados" id="div_dados">  
+        <div class="dados" id="div_dados">
+          <div class="favorito">
+            Escolha sua marca favorita
+          <select name="escolha" id="id_marca">
+              <option value="MAx">Max Titanium</option>
+              <option value="growth" >Growth</option>
+              <option value="Probiótica">Probiótica</option>
+              <option value="integral">integral Medica</option>
+              <option value="black">Black Skull</option>
+            </select> </div> <br>
+  
+           <div> 
+            Escolha seu influencer favorito
+          <select name="escolha" id="id_influ">
+              <option value="Gracyanne Barbosa">Gracyanne Barbosa</option>
+              <option value="David Laid" >David Laid</option>
+              <option value="Leo Estronda">Leo Estronda</option>
+              <option value="Fabio Giga">Fabio Giga</option>
+              <option value="Alex Eubank">Alex Eubank</option>
+              <option value="Ramon Dino">Ramon Dino</option>
+            </select> </div>
+            <button onclick="dados()">cadastrar</button>
+            </div>
+          
         </div>
       </div>
     </div>
@@ -71,11 +94,15 @@
   var sobrenome = sessionStorage.SOBRENOME_USUARIO;
   var email = sessionStorage.EMAIL_USUARIO;
   var senha = sessionStorage.SENHA_USUARIO;
-
+  var marca = id_marca.value
+  var influencer = id_influ.value
+function dados(){
   div_dados.innerHTML = `<h1>Dados pessoais</h1> <br>
-          <h3>Nome : ${nome}</h3> <br>
-          <h3>Sobrenome : ${sobrenome}</h3> <br>
-          <h3>Email : ${email}</h3> <br>
-          <h3>Senha : ${senha}</h3>`
+          <h3>Nome : ${nome}</h3> 
+          <h3>Email : ${email}</h3>
+          <h3>Marca favorita : ${marca}</h3>
+          <h3>Influencer favorito: ${influencer}</h3> 
+           `
+        }
 
 </script>

@@ -1,4 +1,6 @@
-
+body{
+  background-color: black;
+}
 .geral {
     display: flex;
   }
@@ -93,6 +95,8 @@
 
     .grafico1{
         margin-left: 20%;
+        background-color: rgb(43, 40, 40);
+        border-radius: 10px;
         
     }
 
@@ -102,9 +106,10 @@
     }
 
     .tela{
-     margin-left: 20%;
+     margin-left: 15%;
       display: flex;
       align-items: center;
+      justify-content: center;
       
     }
   

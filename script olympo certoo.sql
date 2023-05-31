@@ -8,8 +8,8 @@ sobrenome varchar(45),
 email varchar(50),
 senha varchar(45),
 fkTreino int,
-fkExperiencia int,
-constraint fkexperiencia foreign key (fkExperiencia) references experiencia(idexperi),
+fkfavorito int,
+constraint fkexperiencia foreign key (fkfavorito) references favorito(idexperi),
 constraint fktreino foreign key (fkTreino) references treino(idTreino)
 );
 select * from usuario;
@@ -21,6 +21,8 @@ idTreino int primary key auto_increment,
 dias int,
 minutos int
 );
+
+select * from treino;
 
 create table favorito (
 idexperi int primary key auto_increment,
