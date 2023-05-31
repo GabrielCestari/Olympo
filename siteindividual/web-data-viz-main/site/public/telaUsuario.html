@@ -49,36 +49,50 @@
       </div>
 
     </div>
-    <div class="visao">
-      <div>
-        <img src="img/romano.png" alt=""> <br> <br>
-        <div class="dados" id="div_dados">
-          <div class="favorito">
-            Escolha sua marca favorita
-          <select name="escolha" id="id_marca">
-              <option value="MAx">Max Titanium</option>
-              <option value="growth" >Growth</option>
-              <option value="Probiótica">Probiótica</option>
-              <option value="integral">integral Medica</option>
-              <option value="black">Black Skull</option>
-            </select> </div> <br>
-  
-           <div> 
-            Escolha seu influencer favorito
-          <select name="escolha" id="id_influ">
-              <option value="Gracyanne Barbosa">Gracyanne Barbosa</option>
-              <option value="David Laid" >David Laid</option>
-              <option value="Leo Estronda">Leo Estronda</option>
-              <option value="Fabio Giga">Fabio Giga</option>
-              <option value="Alex Eubank">Alex Eubank</option>
-              <option value="Ramon Dino">Ramon Dino</option>
-            </select> </div>
-            <button onclick="dados()">cadastrar</button>
-            </div>
-          
-        </div>
+
+  </div>
+  <div class="visao">
+    <div class="alerta_erro">
+      <div class="card_erro" id="cardErro">
+          <span id="mensagem_erro"></span>
       </div>
+  </div>
+    <div>
+      <img src="img/romano.png" alt=""> <br> <br>
+      <div class="dados" id="div_dados">
+        <div class="favorito">
+          Escolha sua marca favorita
+          <select name="escolha" id="id_marca">
+            <option value="Max Titanium">Max Titanium</option>
+            <option value="growth">Growth</option>
+            <option value="Probiótica">Probiótica</option>
+            <option value="integral">integral Medica</option>
+            <option value="black">Black Skull</option>
+          </select>
+        </div> <br>
+
+        <div>
+          Escolha seu influencer favorito
+          <select name="select" id="id_influ">
+            <option value="Gracyanne Barbosa">Gracyanne Barbosa</option>
+            <option value="David Laid">David Laid</option>
+            <option value="Leo Estronda">Leo Estronda</option>
+            <option value="Fabio Giga">Fabio Giga</option>
+            <option value="Alex Eubank">Alex Eubank</option>
+            <option value="Ramon Dino">Ramon Dino</option>
+          </select>
+        </div>
+        <button onclick="cadastrarfavorito()">cadastrar</button>
+      </div>
+
     </div>
+  </div>
+  </div>
+  <div id="div_aguardar" class="loading-div">
+    <img src="./assets/circle-loading.gif" id="loading-gif">
+  </div>
+
+  <div id="div_erros_login"></div>
   </div>
 
 
@@ -94,15 +108,67 @@
   var sobrenome = sessionStorage.SOBRENOME_USUARIO;
   var email = sessionStorage.EMAIL_USUARIO;
   var senha = sessionStorage.SENHA_USUARIO;
-  var marca = id_marca.value
-  var influencer = id_influ.value
-function dados(){
-  div_dados.innerHTML = `<h1>Dados pessoais</h1> <br>
-          <h3>Nome : ${nome}</h3> 
-          <h3>Email : ${email}</h3>
-          <h3>Marca favorita : ${marca}</h3>
-          <h3>Influencer favorito: ${influencer}</h3> 
-           `
-        }
+
+  // function dados(){
+  //   var marca = id_marca.value
+  //   var influencer = id_influ.value
+  //   div_dados.innerHTML = `<h1>Dados pessoais</h1> <br>
+  //           <h3>Nome : ${nome}</h3> 
+  //           <h3>Email : ${email}</h3>
+  //           <h3>Marca favorita : ${marca}</h3>
+  //           <h3>Influencer favorito: ${influencer}</h3> 
+  //            `
+  //         }
+
+  function cadastrarfavorito() {
+    aguardar();
+    var marcaVar = id_marca.value
+    var influencerVar = id_influ.value
+    //Recupere o valor da nova input pelo nome do id
+    // Agora vá para o método fetch logo abaixo
+
+    // Enviando o valor da nova input
+    fetch("/usuarios/cadastrarfavorito", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        // crie um atributo que recebe o valor recuperado aqui
+        // Agora vá para o arquivo routes/usuario.js
+        marcaServer: marcaVar,
+        influencerServer: influencerVar
+      })
+    }).then(function (resposta) {
+
+      console.log("resposta: ", resposta);
+
+      if (resposta.ok) {
+        cardErro.style.display = "block";
+
+
+      }
+      setTimeout(() => {
+        window.location = "dados.html";
+      }, "1000")
+
+      sessionStorage.SOBRENOME_USUARIO = json.sobrenome;
+      sessionStorage.SENHA_USUARIO = json.senha;
+
+      limparFormulario();
+      finalizarAguardar();
+    }
+    ).catch (function (resposta) {
+    console.log(`#ERRO: ${resposta}`);
+    finalizarAguardar();
+  });
+
+  return false;
+  }
+
+
+  function sumirMensagem() {
+    cardErro.style.display = "none"
+  }
 
 </script>
