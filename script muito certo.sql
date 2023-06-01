@@ -37,6 +37,15 @@ select * from favorito;
 select marca from favorito;
 select * from usuario  join favorito on idUsuario = fkusuario2;
 select marca, count(marca) as votos from favorito join usuario on fkusuario2 = idUsuario group by marca;
+select influencer, count(influencer) as votos from favorito join usuario on fkusuario2 = idUsuario group by influencer;
+
+insert  into favorito values 
+(null, "Max Titanium", "David Laid", 1),
+(null, "Growth", "David Laid", 1),
+(null, "integral Medica", "Leo Estronda", 1),
+(null, "Black Skull", "Fabio Giga", 1),
+(null, "Max Titanium", "David Laid", 1),
+(null, "Max Titanium", "David Laid", 1);
 
 
 

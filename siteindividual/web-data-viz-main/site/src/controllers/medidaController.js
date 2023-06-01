@@ -49,7 +49,7 @@ function buscarUltimasinfluencer(req, res) {
 
     console.log(`Recuperando as ultimas ${limite_linhas} medidas`);
 
-    medidaModel.buscarUltimasMedidas(influencer, limite_linhas).then(function (resultado) {
+    medidaModel.buscarUltimasinfluencer(influencer, limite_linhas).then(function (resultado) {
         if (resultado.length > 0) {
             res.status(200).json(resultado);
         } else {
@@ -69,7 +69,7 @@ function buscarinfluencerEmTempoReal(req, res) {
 
     console.log(`Recuperando medidas em tempo real`);
 
-    medidaModel.buscarMedidasEmTempoReal(influencer).then(function (resultado) {
+    medidaModel.buscarinfluencerEmTempoReal(influencer).then(function (resultado) {
         if (resultado.length > 0) {
             res.status(200).json(resultado);
         } else {
