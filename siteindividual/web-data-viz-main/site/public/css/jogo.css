@@ -106,6 +106,7 @@ text-decoration: none;
     justify-content: center;
     flex-direction: column;
     color: white;
+    margin-top: 5%;
 
   }
   .div_gif img{
@@ -114,7 +115,7 @@ text-decoration: none;
 
   }
   .escolha{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     background-color: black;
     border-radius: 10px;

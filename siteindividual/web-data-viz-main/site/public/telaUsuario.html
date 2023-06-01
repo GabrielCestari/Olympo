@@ -21,7 +21,7 @@
         </div>
 
         <div class="caminhos">
-          <a href="telaUsuario.html">
+          <a href="dados.html">
             <h3>Perfil</h3>
           </a>
         </div>
@@ -66,8 +66,8 @@
             <option value="Max Titanium">Max Titanium</option>
             <option value="growth">Growth</option>
             <option value="Probiótica">Probiótica</option>
-            <option value="integral">integral Medica</option>
-            <option value="black">Black Skull</option>
+            <option value="integral Medica">integral Medica</option>
+            <option value="black Skull">Black Skull</option>
           </select>
         </div> <br>
 
@@ -126,7 +126,8 @@
     var influencerVar = id_influ.value
     //Recupere o valor da nova input pelo nome do id
     // Agora vá para o método fetch logo abaixo
-
+    localStorage.setItem('marca', marcaVar)
+    localStorage.setItem('influencer', influencerVar)
     // Enviando o valor da nova input
     fetch("/usuarios/cadastrarfavorito", {
       method: "POST",

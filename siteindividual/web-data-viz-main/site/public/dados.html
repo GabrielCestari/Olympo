@@ -21,7 +21,7 @@
         </div>
 
         <div class="caminhos">
-          <a href="telaUsuario.html">
+          <a href="dados.html">
             <h3>Perfil</h3>
           </a>
         </div>
@@ -53,7 +53,7 @@
   </div>
     <div class="visao">
       <div>
-        <img src="img/romano.png" alt=""> <br> <br>
+        <img src="img/romano.png" alt="" class="imagem"> <br> <br>
         <div class="dados" id="div_dados">
           
         </div>
@@ -70,16 +70,21 @@
 
 </html>
 <script>
+ var marca = localStorage.getItem("marca")
+    var influencer = localStorage.getItem("influencer")
 
 var nome = sessionStorage.NOME_USUARIO;
-  var sobrenome = sessionStorage.SOBRENOME_USUARIO;
   var email = sessionStorage.EMAIL_USUARIO;
-  var senha = sessionStorage.SENHA_USUARIO;
   div_dados.innerHTML = `<h1>Dados pessoais</h1> <br>
           <h3>Nome : ${nome}</h3> 
           <h3>Email : ${email}</h3>
           <h3>Marca favorita : ${marca}</h3>
           <h3>Influencer favorito: ${influencer}</h3> 
+          <div class="caminhos">
+          <a href="telaUsuario.html">
+            <h3>trocar favoritos</h3>
+          </a>
+        </div>
            `
         
     </script>
