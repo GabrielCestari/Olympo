@@ -101,6 +101,7 @@ function cadastrartreino(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
     var dias = req.body.diasServer;
     var minutos = req.body.minutosServer;
+    var id = req.body.idServer;
    
 
     // Faça as validações dos valores
@@ -108,10 +109,12 @@ function cadastrartreino(req, res) {
         res.status(400).send("Seu dia está undefined!");
     } else if (minutos == undefined) {
         res.status(400).send("Seu tempo está undefined!");
-    } else {
+    }  else if (id == undefined) {
+        res.status(400).send("Seu tempo está undefined!");
+    }else {
         
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        usuarioModel.cadastrartreino(dias, minutos)
+        usuarioModel.cadastrartreino(dias, minutos, id)
             .then(
                 function (resultado) {
                     res.json(resultado);
@@ -133,17 +136,19 @@ function cadastrarfavorito(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
     var marca = req.body.marcaServer;
     var influencer = req.body.influencerServer;
-   
+    var id = req.body.idServer;
 
     // Faça as validações dos valores
     if (marca == undefined) {
         res.status(400).send("Seu dia está undefined!");
     } else if (influencer == undefined) {
         res.status(400).send("Seu tempo está undefined!");
-    } else {
+    }  else if (id == undefined) {
+        res.status(400).send("Seu tempo está undefined!");
+    }else {
         
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        usuarioModel.cadastrarfavorito(marca, influencer)
+        usuarioModel.cadastrarfavorito(marca, influencer, id)
             .then(
                 function (resultado) {
                     res.json(resultado);

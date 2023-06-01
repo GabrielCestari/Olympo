@@ -31,25 +31,25 @@ function cadastrar(nome, sobrenome, email, senha) {
     return database.executar(instrucao);
 }
 
-function cadastrartreino (dias, minutos) {
-    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", dias, minutos);
+function cadastrartreino (dias, minutos, id) {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", id, dias, minutos);
     
     // Insira exatamente a query do banco aqui, lembrando da nomenclatura exata nos valores
     //  e na ordem de inserção dos dados.
     var instrucao = `
-        INSERT INTO treino (dias, minutos) VALUES ('${dias}', '${minutos}');
+        INSERT INTO treino (dias, minutos, fkUsuario ) VALUES ('${dias}', '${minutos}', '${id}');
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
 }
 
-function cadastrarfavorito (marca, influencer) {
+function cadastrarfavorito (marca, influencer, id) {
     console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", marca, influencer);
     
     // Insira exatamente a query do banco aqui, lembrando da nomenclatura exata nos valores
     //  e na ordem de inserção dos dados.
     var instrucao = `
-        INSERT INTO favorito (marca, influencer) VALUES ('${marca}', '${influencer}');
+        INSERT INTO favorito (marca, influencer, fkusuario2) VALUES ('${marca}', '${influencer}', '${id}');
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);

@@ -108,6 +108,7 @@
   var sobrenome = sessionStorage.SOBRENOME_USUARIO;
   var email = sessionStorage.EMAIL_USUARIO;
   var senha = sessionStorage.SENHA_USUARIO;
+ 
 
   // function dados(){
   //   var marca = id_marca.value
@@ -129,6 +130,7 @@
     localStorage.setItem('marca', marcaVar)
     localStorage.setItem('influencer', influencerVar)
     // Enviando o valor da nova input
+    var idVar = sessionStorage.ID_USUARIO;
     fetch("/usuarios/cadastrarfavorito", {
       method: "POST",
       headers: {
@@ -138,6 +140,7 @@
         // crie um atributo que recebe o valor recuperado aqui
         // Agora vá para o arquivo routes/usuario.js
         marcaServer: marcaVar,
+        idServer: idVar,
         influencerServer: influencerVar
       })
     }).then(function (resposta) {

@@ -104,7 +104,7 @@
     else {
       setInterval(sumirMensagem, 5000)
     }
-
+    var idVar = sessionStorage.ID_USUARIO;
     // Enviando o valor da nova input
     fetch("/usuarios/cadastrartreino", {
       method: "POST",
@@ -115,6 +115,7 @@
         // crie um atributo que recebe o valor recuperado aqui
         // Agora vá para o arquivo routes/usuario.js
         diasServer: diasVar,
+        idServer: idVar,
         minutosServer: minutosVar
       })
     }).then(function (resposta) {
