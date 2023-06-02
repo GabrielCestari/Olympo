@@ -1,10 +1,12 @@
 body {
-    margin: 0;
+    width: 90%;
+    height: 100vh;
     overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+   background-color: black;
+    
 }
 
 .geral {
@@ -99,29 +101,34 @@ text-decoration: none;
     cursor: pointer;
   }
 
-
   .card{
-    margin-left: 20%;
+    position: relative;
+    margin-left: 35%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     color: white;
-    margin-top: 5%;
-
+    width: 40%;
+    /* bottom: 25%;
+    margin-top: 5%; */
   }
   .div_gif img{
     border-radius: 10px;
     margin-top: 10%;
-
   }
   .escolha{
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     background-color: black;
     border-radius: 10px;
     width: 100%;
     flex-direction: column;
     border: 1px solid white;
+    align-items: center;
+  }
+  .escolha select{
+    width: 40%;
+    border-radius: 2px;
   }
   .gerar{
     color: white;
