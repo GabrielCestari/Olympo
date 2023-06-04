@@ -189,12 +189,14 @@ border-radius: 1opx;
     .alerta_erro{
       display: flex;
       justify-content: flex-end;
+      position: absolute;
+      
     }
     
     .card_erro {
       display: none;
-      background-color: #fff;
-      color: black;
+      background-color: black;
+      color: white;
       width: 230px;
       position: fixed;
       border-radius: 4px;

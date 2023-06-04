@@ -74,14 +74,14 @@ text-align: center;
 .loading-div {
     width: 50px;
     display: none;
-  }
+ }
   
-  .loading-div img {
+.loading-div img {
     height: 50px;
     width: 50px;
   }
   
-  #div_erros_login {
+.div_erros_login {
     display: none
   }
   
@@ -92,8 +92,8 @@ text-align: center;
   
   .card_erro {
     display: none;
-    background-color: #fff;
-    color: black;
+    background-color: black;
+    color: white;
     width: 230px;
     position: fixed;
     border-radius: 4px;

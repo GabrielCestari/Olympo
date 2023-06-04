@@ -8,6 +8,7 @@
     <title>Olympo | Login</title>
     <link rel="stylesheet" href="css/login.css">
     <script src="js/funcoes.js"></script>
+    <link rel="shortcut icon" href="img/logo original.png" type="image/x-icon">
 </head>
 
 <body>
@@ -21,12 +22,13 @@
             </ul>
         </div>
     </div>
-    <div class="alerta_erro">
-        <div class="card_erro" id="cardErro">
-            <span id="mensagem_erro"></span>
-        </div>
-    </div>
+   
     <div class="cadastro">
+        <div class="alerta_erro">
+            <div class="card_erro" id="cardErro">
+                <span id="mensagem_erro"></span>
+            </div>
+        </div>
         <div class="campo">
             <ul class="textCampo">
                 <h1>Login</h1>
@@ -39,7 +41,7 @@
                 <img src="./assets/circle-loading.gif" id="loading-gif">
             </div>
 
-            <div id="div_erros_login"></div>
+            <div id="div_erros_login" class="div_erros_login"></div>
         </div>
     </div>
 

@@ -97,24 +97,25 @@ text-align: center;
     display: none;
   }
   
-  .loading-div img {
+.loading-div img {
     height: 50px;
     width: 50px;
   }
   
-  #div_erros_login {
-    display: none
+.div_erros_login {
+    display: none;
+    color:white
   }
   
-  .alerta_erro{
+.alerta_erro{
     display: flex;
     justify-content: flex-end;
   }
   
-  .card_erro {
+.card_erro {
     display: none;
-    background-color: #fff;
-    color: black;
+    background-color: black;
+    color: white;
     width: 230px;
     position: fixed;
     border-radius: 4px;
@@ -123,7 +124,7 @@ text-align: center;
     margin-right: 10%;
   }
   
-  .card_erro #mensagem_erro{
+.card_erro #mensagem_erro{
     font-weight: 500;
     font-size: 20px;
   }

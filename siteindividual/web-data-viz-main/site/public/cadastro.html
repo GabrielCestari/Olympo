@@ -8,6 +8,7 @@
     <title>Olympo | Cadastro</title>
     <link rel="stylesheet" href="css/cadastro.css">
     <script src="js/funcoes.js"></script>
+    <link rel="shortcut icon" href="img/logo original.png" type="image/x-icon">
 </head>
 
 <body>
@@ -21,20 +22,21 @@
             </ul>
         </div>
     </div>
-    <div class="alerta_erro">
-        <div class="card_erro" id="cardErro">
-            <span id="mensagem_erro"></span>
-        </div>
-    </div>
+
     <div class="cadastro">
+        <div class="alerta_erro">
+            <div class="card_erro" id="cardErro">
+                <span id="mensagem_erro"></span>
+            </div>
+        </div>
         <div class="campo">
             <ul class="textCampo">
                 <h1>Cadastrar</h1>
                 <input id="nome_input" placeholder="Nome" class="input"> <br> <br>
                 <input id="sobrenome_input" placeholder="Sobrenome" class="input"> <br> <br>
                 <input id="email_input" placeholder="Email" class="input"> <br> <br>
-                <input id="senha_input" placeholder="Senha:" class="input"> <br> <br>
-                <input id="confirma_input" placeholder="Confirmação de Senha:" class="input"> <br><br>
+                <input type="password" id="senha_input" placeholder="Senha:" class="input"> <br> <br>
+                <input type="password" id="confirma_input" placeholder="Confirmação de Senha:" class="input"> <br><br>
             </ul>
             <button class="botão" onclick="cadastrar()">Cadastrar</button>
             <div id="div_aguardar" class="loading-div">
@@ -63,7 +65,7 @@
         //Recupere o valor da nova input pelo nome do id
         // Agora vá para o método fetch logo abaixo
         var nomeVar = nome_input.value;
-        var sobrenomeVar = sobrenome_input.value; 
+        var sobrenomeVar = sobrenome_input.value;
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirma_input.value;
@@ -72,6 +74,22 @@
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
 
+            finalizarAguardar();
+            return false;
+        } else if (emailVar.indexOf('@') < 0 || emailVar.indexOf('.com') < 0) {
+            cardErro.style.display = "block"
+
+            mensagem_erro.innerHTML = `Email invalido <br><br>`
+            finalizarAguardar();
+            return false;
+        } else if (senhaVar.length < 7) {
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = `A senha tem que ter no mínino 7 caracteres`
+            finalizarAguardar();
+            return false;
+        } else if (confirmacaoSenhaVar != senhaVar) {
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = `Senha incompativel`
             finalizarAguardar();
             return false;
         }
@@ -105,7 +123,7 @@
                 setTimeout(() => {
                     window.location = "login.html";
                 }, "2000")
-                
+
                 sessionStorage.SOBRENOME_USUARIO = json.sobrenome;
                 sessionStorage.SENHA_USUARIO = json.senha;
 
@@ -126,11 +144,11 @@
         cardErro.style.display = "none"
     }
 
-    
-localStorage.setItem('nome', nomeVar)
-localStorage.setItem('sobrenome', sobrenomeVar)
-localStorage.setItem('email', emailVar)
-localStorage.setItem('senha', senhavar)
-location.href="telaUsuario.html"
+
+    localStorage.setItem('nome', nomeVar)
+    localStorage.setItem('sobrenome', sobrenomeVar)
+    localStorage.setItem('email', emailVar)
+    localStorage.setItem('senha', senhavar)
+    location.href = "telaUsuario.html"
 
 </script>

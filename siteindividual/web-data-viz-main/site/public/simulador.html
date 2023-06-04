@@ -8,6 +8,7 @@
   <title>Olympo | Simulador</title>
   <link rel="stylesheet" href="css/simulaodr.css">
   <script src="js/funcoes.js"></script>
+  <link rel="shortcut icon" href="img/logo original.png" type="image/x-icon">
 </head>
 
 <body onload="validarSessao()">
@@ -34,12 +35,12 @@
 
         <div class="caminhos">
           <a href="jogo.html">
-            <h3>Exercicios</h3>
+            <h3>Exercícios</h3>
           </a>
         </div>
         <div class="caminhos">
           <a href="./graficos.html">
-            <h3>Suas preferencias</h3>
+            <h3>Preferências</h3>
           </a>
         </div>
 
@@ -49,31 +50,33 @@
       </div>
     </div>
   </div>
-  <div class="alerta_erro">
-    <div class="card_erro" id="cardErro">
-      <span id="mensagem_erro"></span>
-    </div>
-    <div class="simulador">
-      <div class="treino">
-
-        <h3>Monte o seu treino</h3>
-        <input id="id_dias" placeholder="Quantos dias da semana " type="number" max="7" class="input"> <br> <br>
-        <input id="id_minutos" placeholder="Quantos minutos de treino" type="number" class="input"> <br>
-        <button class="botão" onclick="cadastrartreino()">Criar Treino</button>
-      </div> <br>
-      <div id="div_aguardar" class="loading-div">
-        <img src="./assets/circle-loading.gif" id="loading-gif">
+  
+  <div class="simulador">
+    <div class="alerta_erro">
+      <div class="card_erro" id="cardErro">
+        <span id="mensagem_erro"></span>
       </div>
+    </div>
+    <div class="treino">
 
-      <div id="div_erros_login"></div>
+      <h3>Monte o seu treino</h3>
+      <input id="id_dias" placeholder="Quantos dias da semana " type="number" max="7" class="input"> <br> <br>
+      <input id="id_minutos" placeholder="Quantos minutos de treino" type="number" class="input"> <br>
+      <button class="botão" onclick="cadastrartreino()">Criar Treino</button>
     </div> <br>
+    <div id="div_aguardar" class="loading-div">
+      <img src="./assets/circle-loading.gif" id="loading-gif">
+    </div>
+
+    <div id="div_erros_login"></div>
+  </div> <br>
 
 
-    <div id="div_resposta" class="resposta"></div> <br>
+  <div id="div_resposta" class="resposta"></div> <br>
 
   </div>
 
-  
+
 
 
 </body>
@@ -97,6 +100,13 @@
     if (diasVar == "" || minutosVar == "") {
       cardErro.style.display = "block"
       mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+
+      finalizarAguardar();
+      return false;
+
+    } else if (minutosVar < 30) {
+      cardErro.style.display = "block"
+      mensagem_erro.innerHTML = "(O mínimo de tempo para o treino 30)";
 
       finalizarAguardar();
       return false;
@@ -125,7 +135,7 @@
       if (resposta.ok) {
         cardErro.style.display = "block";
 
-        mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela do treino...";
+        mensagem_erro.innerHTML = "Treino cadastrado realizado com sucesso! Redirecionando para tela do treino...";
 
         setTimeout(() => {
           window.location = "treino.html";

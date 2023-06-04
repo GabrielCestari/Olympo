@@ -33,7 +33,7 @@ body{
     display: flex;
     color: rgb(254, 91, 153);
     list-style: none;
-    justify-content: space-evenly;  
+    justify-content: space-evenly;
 }
 .NavBar a{
     text-decoration: none;
@@ -59,7 +59,7 @@ color: aliceblue;
     position: relative;
     height: 80vh;
     width: 100%;
-    background: url(../img/imagem\ certa.jfif);
+    background-image: linear-gradient(to bottom, transparent 0%, black 100%), url(../img/imagem\ certa.jfif) ;
     background-size: cover;
     display: flex;
     align-items: center;
