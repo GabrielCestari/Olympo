@@ -1,6 +1,8 @@
 body{
   background-color: black;
   font-family:'Times New Roman', Times, serif;
+  background: linear-gradient(black, rgb(37, 22, 22), #e66465);
+  height: 100vh;
 }
 .geral {
     display: flex;
@@ -98,19 +100,28 @@ body{
         margin-left: 20%;
         background-color: rgb(43, 40, 40);
         border-radius: 10px;
-        
+        width: 40%;
+        position: relative;
+        left: 10%;
+      
     }
 
     .grafico{
-      width: 50%;
-
+      width: 40%;
+      background-color: rgb(43, 40, 40);
+      border-radius: 10px;
+      position: relative;
+      right: 10%;
     }
 
     .tela{
      margin-left: 15%;
       display: flex;
       align-items: center;
-      justify-content: center;  
+      justify-content: space-between;  
+  
+      height: 95vh;
+      flex-direction: column;
     }
     .tela h1{
       color: white;
